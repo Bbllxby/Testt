@@ -135,7 +135,7 @@ function MakeNotifi(Configs)
     Font = Configs_HUB.Text_Font,
     TextSize = 20,
     BackgroundTransparency = 1,
-    TextColor3 = Color3.fromRGB(200, 200, 200),
+    TextColor3 = Color3.fromRGB(255, 255, 255),
     Position = UDim2.new(1, -5, 0, 5),
     AnchorPoint = Vector2.new(1, 0),
     Size = UDim2.new(0, 25, 0, 25)
@@ -219,7 +219,7 @@ function MakeWindow(Configs)
       Text = "X",
       Font = Enum.Font.Montserrat,
       TextScaled = true,
-      TextColor3 = Color3.fromRGB(240, 0, 0),
+      TextColor3 = Color3.fromRGB(255, 255, 255),
       BackgroundTransparency = 1,
     })Corner(CloseButton)
     
@@ -932,7 +932,7 @@ function MakeWindow(Configs)
     })Corner(Slider)
     
     local SliderBar2 = Create("Frame", SliderBar1, {
-      BackgroundColor3 = Color3.fromRGB(30, 140, 200),
+      BackgroundColor3 = Color3.fromRGB(255, 255, 255),
       Size = UDim2.new(0, Slider.Position.X.Offset, 1, 0)
     })Corner(SliderBar2)
     
@@ -1140,13 +1140,13 @@ function MakeWindow(Configs)
     })Corner(grade)Stroke(grade)Create("UIGradient", grade, {
       Rotation = 90,
       Color = ColorSequence.new({
-        ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)),
-        ColorSequenceKeypoint.new(0.20, Color3.fromRGB(234, 255, 0)),
-        ColorSequenceKeypoint.new(0.40, Color3.fromRGB(21, 255, 0)),
-        ColorSequenceKeypoint.new(0.60, Color3.fromRGB(0, 255, 255)),
-        ColorSequenceKeypoint.new(0.80, Color3.fromRGB(0, 17, 255)),
-        ColorSequenceKeypoint.new(0.90, Color3.fromRGB(255, 0, 251)),
-        ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 4))
+        ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)),
+        ColorSequenceKeypoint.new(0.20, Color3.fromRGB(255, 255, 255)),
+        ColorSequenceKeypoint.new(0.40, Color3.fromRGB(255, 255, 255)),
+        ColorSequenceKeypoint.new(0.60, Color3.fromRGB(255, 255, 255)),
+        ColorSequenceKeypoint.new(0.80, Color3.fromRGB(255, 255, 255)),
+        ColorSequenceKeypoint.new(0.90, Color3.fromRGB(255, 255, 255)),
+        ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))
       })
     })local SavePos2 = Create("Frame", grade, {Visible = false, Size = UDim2.new(1, 0, 0, 0)})
     
@@ -1606,8 +1606,8 @@ function MakeWindow(Configs)
       Text = "Join",
       Font = Enum.Font.Montserrat,
       TextSize = 15,
-      TextColor3 = Color3.fromRGB(220, 220, 220),
-      BackgroundColor3 = Color3.fromRGB(50, 200, 50)
+      TextColor3 = Color3.fromRGB(0, 0, 0),
+      BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     })Corner(IconLabel)
     
     local time = tick()
@@ -1615,12 +1615,12 @@ function MakeWindow(Configs)
     JoinButton.MouseButton1Click:Connect(function()
       if ClickConter == 0 or tick() - time > 5 then time = tick() setclipboard(DiscordLink) ClickConter = ClickConter + 1
         JoinButton.Text = "Copied to Clipboard"
-        JoinButton.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
-        JoinButton.TextColor3 = Color3.fromRGB(150, 150, 150)
+        JoinButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+        JoinButton.TextColor3 = Color3.fromRGB(255, 255, 255)
         task.wait(5)
-        JoinButton.Text = "Join"
-        JoinButton.BackgroundColor3 = Color3.fromRGB(50, 200, 50)
-        JoinButton.TextColor3 = Color3.fromRGB(220, 220, 220)
+        JoinButton.Text = "Join for Huge!"
+        JoinButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+        JoinButton.TextColor3 = Color3.fromRGB(255, 255, 255)
       end
     end)
   end
