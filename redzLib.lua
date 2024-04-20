@@ -5,7 +5,7 @@ local Configs_HUB = {
   Cor_Text = Color3.fromRGB(255, 255, 25),
   Cor_DarkText = Color3.fromRGB(38, 38, 38),
   Corner_Radius = UDim.new(0, 4),
-  Text_Font = Enum.Font.Montserrat
+  Text_Font = Enum.Font.MontserratBlack
 }
 
 local CoreGui = game:GetService("CoreGui")
@@ -217,7 +217,7 @@ function MakeWindow(Configs)
       Position = UDim2.new(1, -10, 0, 5),
       AnchorPoint = Vector2.new(1, 0),
       Text = "X",
-      Font = Enum.Font.Montserrat,
+      Font = Enum.Font.MontserratBlack,
       TextScaled = true,
       TextColor3 = Color3.fromRGB(255, 255, 255),
       BackgroundTransparency = 1,
@@ -272,7 +272,7 @@ function MakeWindow(Configs)
       Size = UDim2.new(1, -70, 0, 40),
       Position = UDim2.new(0, 35, 0, 90),
       BackgroundColor3 = Configs_HUB.Cor_Options,
-      PlaceholderText = "Put the Key here",
+      PlaceholderText = "Enter Key Here",
       Text = "",
       TextColor3 = Configs_HUB.Cor_Text,
       Font = Configs_HUB.Text_Font,
@@ -1577,7 +1577,7 @@ function MakeWindow(Configs)
       BackgroundTransparency = 1,
       Position = UDim2.new(0, 12, 0, 0),
       TextColor3 = Color3.fromRGB(255, 255, 255),
-      Font = Enum.Font.Montserrat,
+      Font = Enum.Font.MontserratBlack,
       TextSize = 14
     })
     
@@ -1588,7 +1588,7 @@ function MakeWindow(Configs)
       BackgroundTransparency = 1,
       Position = UDim2.new(0, 60, 0, 25),
       TextColor3 = Color3.fromRGB(255, 255, 255),
-      Font = Enum.Font.Montserrat,
+      Font = Enum.Font.MontserratBlack,
       TextSize = 14
     })
     
@@ -1604,7 +1604,7 @@ function MakeWindow(Configs)
       AnchorPoint = Vector2.new(0.5, 1),
       Position = UDim2.new(0.5, 0, 1, -8),
       Text = "Join",
-      Font = Enum.Font.Montserrat,
+      Font = Enum.Font.MontserratBlack,
       TextSize = 15,
       TextColor3 = Color3.fromRGB(0, 0, 0),
       BackgroundColor3 = Color3.fromRGB(255, 255, 255)
